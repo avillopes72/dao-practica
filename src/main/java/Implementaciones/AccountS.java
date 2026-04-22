@@ -2,10 +2,10 @@ package Implementaciones;
 
 import ClasesObje.Account;
 
-public class AccountS {
-
+public class AccountS  {
+    
     public boolean deposit(Account account ,float money) {
-        float newBalance= account();
+        
     }
 
     public float withDraw(float money) {
