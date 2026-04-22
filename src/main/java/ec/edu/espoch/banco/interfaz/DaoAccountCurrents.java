@@ -2,19 +2,11 @@
 package ec.edu.espoch.banco.interfaz;
 
 public interface DaoAccountCurrents {
-    public boolean deposit(float money) {
-        return true;
-    }
+    public boolean deposit(float money);
 
-    public float withDraw(float money) {
-        return 0.0f;
-    }
+    public float withDraw(float money);
 
-    public boolean monthlyStatement() {
-        return true;
-    }
+    public boolean monthlyStatement();
 
-    public void print() {
-
-    }
+    public void print();
 }
