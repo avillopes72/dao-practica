@@ -5,7 +5,9 @@ import ClasesObje.Account;
 public class AccountS  {
     
     public boolean deposit(Account account ,float money) {
-        float newop=account.
+        float newBalance=account.getBalance();
+        account.setBalance(newBalance);
+        return true;
     }
 
     public float withDraw(float money) {
@@ -21,8 +23,8 @@ public class AccountS  {
     }
 
     public void print(Account account) {
-        System.out.println("Saldo: " + account);
-        System.out.println("Numero Deposito: " + account);
+        System.out.println("Saldo: " + account.getBalance());
+        System.out.println("Numero Deposito: " + account.getDepositNumber());
    
 }
 }
