@@ -10,8 +10,10 @@ public class AccountS  {
         return true;
     }
 
-    public float withDraw(float money) {
-        return 0.0f;
+    public boolean withDraw(Account account, float value) {
+        float newBalance=account.getBalance()-value;
+        account.setBalance(newBalance);
+        return true;
     }
 
     private float calculateInterest() {
