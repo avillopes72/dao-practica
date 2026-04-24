@@ -1,11 +1,21 @@
 package Implementaciones;
 
+import ClasesObje.AccountSaving;
 import ec.edu.espoch.banco.interfaz.DaoAccountSavings;
 
 public class AccountSavingS extends AccountS implements DaoAccountSavings {
 
+    public AccountSavingS(AccountSaving account) {
+        if (account.getBalance() < 1000) {
+            account.setStatuAccount(true);
+        }
+    }
+
     @Override
-    public boolean deposit(float money) {
+    public boolean deposit(AccountSaving accountSaving, float money) {
+        if(accountSaving.getStatuAccount()){
+            
+        }
         return true;
     }
 

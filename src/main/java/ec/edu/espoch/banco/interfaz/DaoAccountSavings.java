@@ -1,8 +1,10 @@
 
 package ec.edu.espoch.banco.interfaz;
 
+import ClasesObje.AccountSaving;
+
 public interface DaoAccountSavings {
-    public boolean deposit(float money) ;
+    public boolean deposit(AccountSaving accountSaving ,float money);
 
     public float withDraw(float money) ;
 
