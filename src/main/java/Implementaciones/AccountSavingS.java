@@ -12,16 +12,22 @@ public class AccountSavingS extends AccountS implements DaoAccountSavings {
     }
 
     @Override
-    public boolean deposit(AccountSaving accountSaving, float money) {
-        if(accountSaving.getStatuAccount()){
-            
+    public boolean deposit(AccountSaving accountSaving, float value) {
+        boolean resp = false;
+        if (accountSaving.getStatuAccount()) {
+            resp = super.deposit(accountSaving, value);
         }
         return true;
     }
 
     @Override
-    public float withDraw(float money) {
-        return 0.0f;
+    public boolean withDraw(AccountSaving accountSaving, float value) {
+        boolean resp = false;
+        if (accountSaving.getStatuAccount()) {
+            resp = super.withDraw(accountSaving, value);
+        }
+        return resp;
+
     }
 
     @Override

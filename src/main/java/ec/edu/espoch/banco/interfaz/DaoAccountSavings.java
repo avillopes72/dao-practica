@@ -4,9 +4,9 @@ package ec.edu.espoch.banco.interfaz;
 import ClasesObje.AccountSaving;
 
 public interface DaoAccountSavings {
-    public boolean deposit(AccountSaving accountSaving ,float money);
+    public boolean deposit(AccountSaving accountSaving ,float valuar);
 
-    public float withDraw(float money) ;
+    public boolean withDraw(AccountSaving accountSaving,float value) ;
 
     public boolean monthlyStatement();
 
